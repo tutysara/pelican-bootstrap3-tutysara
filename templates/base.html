@@ -93,7 +93,17 @@
                 {% endif %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li>
+                
+                <form  class="navbar-form" role="search" action="http://www.google.com/search" method="get">
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search..." name="q" id="search">
+                    <input value="{{ SITEURL }}" name="sitesearch" type="hidden">
+                  </div>
+                </form>
+              </li>
                 <li><a href="{{ SITEURL }}/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                <li><a href="{{ SITEURL }}/feeds/articles.rss.xml"><i class="icon-rss"></i>Feeds</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -106,8 +116,11 @@
             {% block content %}
             {% endblock %}
         </div>
-        <div class="col-lg-2 well well-sm" id="sidebar">
+        <!-- <div class="col-lg-2 well well-sm" id="sidebar"> -->
+        <div class="col-lg-2 sidebar-offcanvas" id="sidebar">
+        
             {% include 'includes/sidebar.html' %}
+        
         </div>
     </div>
 </div>
@@ -123,7 +136,7 @@
 </div> -->
 <div id="footer">
       <div class="container">
-        <p class="text-muted credit">{{ COPY_RIGHT_STRING }} <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+        <p class="text-muted credit">{{ COPY_RIGHT_STRING }}</p>
       </div>
     </div>
 
