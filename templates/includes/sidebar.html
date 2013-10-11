@@ -15,9 +15,9 @@
       
           {% if SOCIAL %}
           <h5 class="list-group-item-heading"><i class="icon-home icon-large"></i>Social</h5>
-               {% for name, link in SOCIAL %}
+               {% for name, link, icon in SOCIAL %}
                     <a class="list-group-item" href="{{ link }}"><i
-                            class="icon-{{ name }}-sign"></i>{{ name }}
+                            class="{{ icon }}"></i>{{ name }}
                     </a>
                 {% endfor %}
             {% endif %}
