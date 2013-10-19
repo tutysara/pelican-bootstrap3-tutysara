@@ -58,7 +58,8 @@ a, a:hover {
 }
 
 .highlight pre {
-    background-color: #202020;
+    /*background-color: #202020;*/
+    background-color: #f5f5f5;
     color: #777;
 }
 
