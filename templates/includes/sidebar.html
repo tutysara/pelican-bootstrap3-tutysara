@@ -14,7 +14,7 @@
         <div class="list-group">
       
           {% if SOCIAL %}
-          <h5 class="list-group-item-heading"><i class="icon-home icon-large"></i>Social</h5>
+          <div class="list-group-item-heading"><i class="icon-home icon-large"></i>Social</div>
                {% for name, link, icon in SOCIAL %}
                     <a class="list-group-item" href="{{ link }}"><i
                             class="{{ icon }}"></i>{{ name }}
@@ -36,8 +36,8 @@
             {#    {% endfor %}#}
       <div class="well">
         <div class="list-group">
-           <h5 class="list-group-item-heading"><i class="icon-tags icon-large">
-                   </i>Popular Tags</h5>
+           <div class="list-group-item-heading"><i class="icon-tags icon-large">
+                   </i>Popular Tags</div>
             {% for tag in tag_cloud|sort(attribute='1') %}
              <!--   <li class="list-group-item tag-{{ tag.1 }}"> -->
            
